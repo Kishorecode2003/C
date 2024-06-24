@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    // Write C code here
+    int b,e;
+    printf("Enter the base and the exponent:");
+    scanf("%d,%d",&b,&e);
+    int temp=pow(b,e);
+    double result=pow(b,e);
+    printf("%d\n%lf",temp,result);
+    return 0;
+}
