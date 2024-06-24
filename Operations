@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+int add(int x,int y)
+    {
+        int sum=0;
+        sum=x+y;
+        printf("%d\n",sum);
+    }
+    int subtract(int x,int y)
+    {
+        int diff=0;
+        diff=x-y;
+        printf("%d\n",diff);
+    }
+    int multiply(int x,int y)
+    {
+        int mul=0;
+        mul=x*y;
+        printf("%d\n",mul);
+    }
+    int division(int x,int y)
+    {
+        int res=0;
+        res=x/y;
+        printf("%d\n",res);
+    }
+    int modulus(int x,int y)
+    {
+        int res=0;
+        res=x%y;
+        printf("%d\n",res);
+    }
+    int power(int x,int y)
+    {
+        int res=0;
+        res=pow(x,y);
+        printf("%d\n",res);
+    }
+int main()
+{
+    int n1,n2;
+    printf("Enter the number 1: ");
+    scanf("%d",&n1);
+    printf("Enter the number 2: ");
+    scanf("%d",&n2);
+    add(n1,n2);
+    subtract(n1,n2);
+    multiply(n1,n2);
+    division(n1,n2);
+    modulus(n1,n2);
+    power(n1,n2);
+    return 0;
+}
