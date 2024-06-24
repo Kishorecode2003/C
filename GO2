@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<math.h>
+int Greatest(int x, int y)
+{
+    if(x>y)
+    {
+        return x;
+    }
+    else
+    {
+        return y;
+    }
+}
+int main() {
+    int n1,n2;
+    printf("Enter the number 1: ");
+    scanf("%d",&n1);
+    printf("Enter the number 2: ");
+    scanf("%d",&n2);
+    Greatest(n1,n2);
+    int res=Greatest(n1,n2);
+    printf("%d",res);
+    return 0;
+}
