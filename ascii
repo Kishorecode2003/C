@@ -1,0 +1,19 @@
+#include <iostream>
+#include<string.h>
+using namespace std;
+int main()
+{
+    char str[50];
+    cout<<"Enter the String:";
+    cin>>str;
+    int n=strlen(str);
+    for(int i=0;i<n;i++)
+    {
+        if((str[i]>='a') and (str[i]<='z'))
+        {
+            str[i]-=32;
+        }
+    }
+    cout<<str;
+    return 0;
+}
